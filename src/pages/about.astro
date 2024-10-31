@@ -1,0 +1,199 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Acerca de mí"
+	description="Marisela Vincenty"
+	pubDate={new Date('Sep 2024')}
+	heroImage="/blog-placeholder-about.jpg"
+>   <p class="texto">
+        Soy Marisela Vincenty, apasionada por la tecnología y los videojuegos, actualmente
+		explorando el mundo del desarrollo web. Mi meta es combinar creatividad y 
+		tecnología para construir nuevas experiencias interactivas.
+	</p>
+	<section class="personal-info">
+		<h2>Datos Personales</h2>
+		<ul>
+			<li><strong>Nombre:</strong> Marisela Isabel Vincenty Cayo</li>
+			<li><strong>Fecha de Nacimiento:</strong> 08-01-2005</li>
+			<li><strong>Email:</strong> mariselavincenty@gmail.com</li>
+			<li><strong>Ciudad:</strong> Oruro</li>
+			<li><strong>Pais:</strong> Bolivia</li>
+			<li><strong>Teléfono:</strong> 76150359</li>
+			<li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marisela-isabel-vincenty-cayo-912aab32b/">marisela-isabel-vincenty-cayo-912aab32b</a></li>
+			<li><strong>GitHub:</strong> <a href="https://github.com/Marisela2005">github.com/Marisela2005</a></li>
+			<li><strong>Cargo:</strong> Estudiante de Ingeniería Informática</li>
+		</ul>
+	</section>
+	
+	<h1 class="texto-inicial">Educación</h1>	
+			<style>
+                .education {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 20px;
+                    padding: 20px;
+                }
+
+                .card {
+                    background-color: #210850;
+					border-radius: 10px;
+					padding: 20px;
+					text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.3s;
+                }
+
+				.card:hover {    
+					transform: translateY(-10px);
+				}
+
+				.card-icon {
+					width: 100px;
+					height: 100px;
+				}
+				.card-icon2 {
+					width: 300px;
+					height: 100px;
+				}
+				.card-info h3 {
+					margin: 10px 0 5px;
+					font-size: 1.5rem;
+					color: #ffffff;
+				}
+
+				.card-info p {
+					margin: 0;
+					font-size: 1rem;
+					color: #ffffff;
+				}
+			</style>
+			<section class="education">
+				<div class="card">
+					<img src="/edu.png" alt="Educacion" class="card-icon">
+					<div class="card-info">
+						<h3>BACHILLER EN HUMANIDADES</h3>
+						<p>Unidad Educativa Jesús de Nazareth</p>
+						<p>2022</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/edu.png" alt="Educacion" class="card-icon">
+					<div class="card-info">
+						<h3>TÉCNICO MEDIO EN SISTEMAS INFORMÁTICOS</h3>
+						<p>Unidad Educativa Jesús de Nazareth</p>
+						<p>2022</p>
+					</div>
+				</div>
+			</section>
+			<section class="education">
+				<div class="card">
+					<img src="/edu.png" alt="Educacion" class="card-icon">
+					<div class="card-info">
+						<h3>INGLÉS INTERMEDIO</h3>
+						<p>Facultad Nacional de Ingeniería-Oruro</p>
+						<p>2023</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/edu.png" alt="Educacion" class="card-icon">
+					<div class="card-info">
+						<h3>INGENIERÍA INFORMÁTICA</h3>
+						<p>Facultad Nacional de Ingeniería-Oruro</p>
+						<p>Presente</p>
+					</div>
+				</div>
+			</section>
+	<p class="texto">
+		A lo largo de mi trayectoria, he ido cultivando mis habilidades en el desarrollo de
+		software, y actualmente estoy enfocada en aprender y crear proyectos relacionados 
+		con el diseño y desarrollo de Software. Me entusiasma explorar la intersección 
+		entre creatividad y tecnología, donde puedo transformar ideas en experiencias 
+		interactivas utilizando herramientas como Unity, Angular y SQL.
+	</p>
+	<p class="texto"> 
+		Además estoy profundizando en otras áreas como base de datos, lo que me
+		permite tener una visión más completa y técnica para crear soluciones eficientes. 
+		Estoy explorando nuevas tecnologías, como Astro para el desarrollo de páginas web.
+	</p>
+	<h1 class="texto-inicial">Intereses</h1>
+	<section class="education">
+		<div class="card">
+			<img src="/star.png" alt="Interes" class="card-icon2">
+			<div class="card-info">
+				<h3>ARTE Y DISEÑO</h3>
+			</div>
+		</div>
+		<div class="card">
+			<img src="/star.png" alt="Interes" class="card-icon2">
+			<div class="card-info">
+				<h3>VIDEOJUEGOS</h3>
+			</div>
+		</div>
+	</section>
+	<section class="education">
+		<div class="card">
+			<img src="/star.png" alt="Interes" class="card-icon2">
+			<div class="card-info">
+				<h3>MÚSICA</h3>
+			</div>
+		</div>
+		<div class="card">
+			<img src="/star.png" alt="Interes" class="card-icon2">
+			<div class="card-info">
+				<h3>PROGRAMACIÓN</h3>
+			</div>
+		</div>
+	</section>
+	<h1 class="texto-inicial">Habilidades</h1>
+	<section class="education">
+		<div class="card">
+			<img src="/skill.png" alt="Interes" class="card-icon">
+			<div class="card-info">
+				<h3>CREATIVIDAD</h3>
+			</div>
+		</div>
+		<div class="card">
+			<img src="/skill.png" alt="Interes" class="card-icon">
+			<div class="card-info">
+				<h3>CURIOSIDAD</h3>
+			</div>
+		</div>
+	</section>
+	<section class="education">
+		<div class="card">
+			<img src="/skill.png" alt="Interes" class="card-icon">
+			<div class="card-info">
+				<h3>AUTOCONFIANZA</h3>
+			</div>
+		</div>
+		<div class="card">
+			<img src="/skill.png" alt="Interes" class="card-icon">
+			<div class="card-info">
+				<h3>EMPATÍA</h3>
+			</div>
+		</div>
+	</section>
+	<h1 class="texto-inicial">Proyectos</h1>
+	<section class="education">
+		<div class="card">
+			<img src="/juego.png" alt="proyecto" class="card-icon">
+			<div class="card-info">
+				<h3>JUEGO DE PLATAFORMAS</h3>
+				<p>Realizado con Unity con el lenguaje C#</p>
+			</div>
+		</div>
+	</section>
+	<p class="texto"> 
+		En el futuro, quiero combinar mi pasión por los videojuegos con mis habilidades de
+		desarrollo para crear experiencias interactivas que emocionen a las personas. 
+		Además, me gustaría seguir creciendo en el desarrollo web y móvil.
+	</p>
+	<p class="texto"> 
+		Si deseas ponerte en contacto conmigo, visita la sección 'Contactos' para hacerlo.
+	</p>
+</Layout>

@@ -1,0 +1,74 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Contactos"
+	description="Marisela Vincenty"
+	pubDate={new Date('Sep 2024')}
+	heroImage="/blog-placeholder-5.jpg"
+>   <section>
+	<p>Si tienes alguna pregunta o deseas ponerte en contacto conmigo, no dudes en contactarme.</p>
+</section>
+<section class="centered">
+    <img src="/contacto.gif" alt="contacto" />
+</section>
+<style>
+    .centered {
+        text-align: center; /* Centra el contenido de texto */
+        margin: 0 auto; /* Opcional: para centrar el bloque */
+    }
+    img {
+        max-width: 100%; /* Asegura que el GIF no exceda el ancho del contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+</style>
+<section class="contact">
+	<button class="contact-button" onclick="window.location.href='mailto:mariselavincenty@gmail.com?subject=Consulta&body=Hola,%20me%20gustaría%20saber%20más%20sobre...'">Contactar</button>
+
+</section>
+<section>
+	<p></p>
+	<p>O también puedes contactarme a través de:</p>
+	<ul>
+		<li>Email: <a href="mailto:mariselavincenty@gmail.com">mariselavincenty@gmail.com</a></li>
+		<li>Teléfono: 76150359</li>
+		<li>LinkedIn: <a href="https://www.linkedin.com/in/marisela-isabel-vincenty-cayo-912aab32b/">linkedin.com/in/marisela-isabel-vincenty-cayo-912aab32b/</a></li>
+		<li>GitHub: <a href="https://github.com/Marisela2005">github.com/Marisela2005</a></li>
+	</ul>
+</section>
+
+
+  
+  <style>
+  .contact {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+  }
+  
+  .contact-button {
+	background-color: #210850; /* Color de fondo del botón */
+	color: #fff; /* Color del texto */
+	border: none; /* Sin borde */
+	border-radius: 5px; /* Bordes redondeados */
+	padding: 10px 20px; /* Espaciado interno */
+	font-size: 1rem; /* Tamaño de la fuente */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	transition: background-color 0.3s; /* Efecto de transición */
+  }
+  
+  .contact-button:hover {
+	background-color: #ff1493; /* Color del botón al pasar el ratón */
+  }
+  </style>
+  
+<style>
+	.texto {
+		text-align: justify;
+	}
+	.texto-inicial {
+		text-align: center;
+	}
+</style>
+</Layout>

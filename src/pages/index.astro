@@ -1,0 +1,191 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<style>
+			    /* Estilos para el fondo */
+			    body {
+                    background-image: url('/galaxy.jpg'); /* Ruta a tu imagen */
+                    background-size: cover; /* Asegura que la imagen cubra toda la ventana */
+                    background-position: center; /* Centra la imagen */
+                    background-repeat: no-repeat; /* No repetir la imagen */
+			    }
+			</style>
+			<h1 class="texto-inicial">Hola, soy Marisela Vincenty</h1>
+			<p class="texto-inicial">Desarrolladora en formación</p>
+			<video controls autoplay loop muted>
+				<source src="/videos/WhatsApp-Video-2024-09-15.mp4" type="video/mp4">
+			</video>  
+			<style>
+				video {
+				  width: 100%;
+				  max-width: 500px;
+				  margin: 0 auto;
+				  display: block;
+				}
+			</style>
+			<p class="texto"> 
+				Soy desarrolladora en formación con una gran pasión por la tecnología y los videojuegos,
+				actualmente estoy explorando el mundo del desarrollo web y videojuegos. Bienvenida a mi 
+				página web personal.
+			</p>
+			<h1 class="texto-inicial">Tecnologías</h1>	
+			<style>
+                .technologies {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 20px;
+                    padding: 20px;
+                }
+
+                .card {
+                    background-color: #210850;
+					border-radius: 10px;
+					padding: 20px;
+					text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    transition: transform 0.3s;
+                }
+
+				.card:hover {    
+					transform: translateY(-10px);
+				}
+
+				.card-icon {
+					width: 100px;
+					height: 100px;
+				}
+				.card-info h3 {
+					margin: 10px 0 5px;
+					font-size: 1.5rem;
+					color: #ffffff;
+				}
+
+				.card-info p {
+					margin: 0;
+					font-size: 1rem;
+					color: #ffffff;
+				}
+			</style>
+			<section class="technologies">
+				<div class="card">
+					<img src="/Unity.png" alt="Unity" class="card-icon">
+					<div class="card-info">
+						<h3>Unity</h3>
+						<p>2024</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/astro.png" alt="Astro" class="card-icon">
+					<div class="card-info">
+						<h3>Astro</h3>
+						<p>2024</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/sql.png" alt="SQL Server" class="card-icon">
+					<div class="card-info">
+						<h3>SQL Server</h3>
+						<p>2024</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/visual.png" alt="Visual Studio" class="card-icon">
+					<div class="card-info">
+						<h3>Visual Studio</h3>
+						<p>2023</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/builder.png" alt="C++ Builder" class="card-icon">
+					<div class="card-info">
+						<h3>C++ Builder</h3>
+						<p>2024</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/angular.png" alt="Angular" class="card-icon">
+					<div class="card-info">
+						<h3>Angular</h3>
+						<p>2024</p>
+					</div>
+				</div>
+			</section>
+			<h1 class="texto-inicial">Lenguajes</h1>
+			<section class="technologies">
+				<div class="card">
+					<img src="/java.png" alt="Java" class="card-icon">
+					<div class="card-info">
+						<h3>Java</h3>
+						<p>2023</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/C++.png" alt="C++" class="card-icon">
+					<div class="card-info">
+						<h3>C++</h3>
+						<p>2018</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/Csharp.png" alt="C#" class="card-icon">
+					<div class="card-info">
+						<h3>C#</h3>
+						<p>2024</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/sqll.png" alt="SQL" class="card-icon">
+					<div class="card-info">
+						<h3>SQL</h3>
+						<p>2024</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/javascript.png" alt="Javascript" class="card-icon">
+					<div class="card-info">
+						<h3>Javascript</h3>
+						<p>2024</p>
+					</div>
+				</div>
+				<div class="card">
+					<img src="/python.png" alt="Python" class="card-icon">
+					<div class="card-info">
+						<h3>Python</h3>
+						<p>2023</p>
+					</div>
+				</div>
+			</section>
+			<p class="texto">
+				¿Quieres saber más sobre mí? ¡Visita la sección 'Acerca de mi' para conocer más detalles!	
+			</p>
+			<style>
+				.texto {
+					color: white;
+				    text-align: justify;
+				}
+			</style>
+			<style>
+				.texto-inicial {
+					color: white;
+					text-align: center;
+				}
+			</style>	  
+		</main>
+		<Footer />
+	</body>
+</html>
