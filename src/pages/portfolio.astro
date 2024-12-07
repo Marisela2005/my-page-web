@@ -1,0 +1,184 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Juegos"
+	description="Marisela Vincenty"
+	pubDate={new Date('Sep 2024')}
+	heroImage="/blog-placeholder-3.jpg"
+> 
+<style>
+    .centered {
+        text-align: center; /* Centra el contenido de texto */
+        margin: 0 auto; /* Opcional: para centrar el bloque */
+    }
+    img {
+        max-width: 100%; /* Asegura que el GIF no exceda el ancho del contenedor */
+        height: auto; /* Mantiene la relación de aspecto */
+    }
+</style>
+<section class="correcorre">
+    <div class="card">
+        <div class="card-info">
+            <h1>Corre! Corre!</h1>
+        </div>
+        <img src="/corre1.png" alt="CorreCorre" class="card-image">
+        <img src="/corre2.png" alt="CorreCorre" class="card-image">
+        <div class="card-info">
+            <p>Es un juego de plataformas, donde tú controlas a un ágil personaje 
+                que debe saltar sobre troncos flotantes. Mientras avanzas, ganarás 
+                puntos por cada tronco que logres cruzar con éxito, si recoges las 
+                frutas que aparecen en el camino sumarás más puntos. Pero cuidado, 
+                el equilibrio es clave, ya que un solo mal salto puede hacer que 
+                caigas y pierdas la partida. </p>
+        </div>
+    <section class="contact">
+        <a href="https://github.com/Marisela2005/my-unity" class="contact-button">
+            <img src="/github.png" alt="CorreCorre" class="card-icon">Github
+        </a>
+        <a href="https://www.youtube.com/watch?v=0u-qvMVV6m4&list=PLREdURb87ks2qkD9svvlIwYwN35FZ3Afv&index=1" class="contact-button">
+            <img src="/guia.png" alt="CorreCorre" class="card-icon">Guía
+        </a>
+        <a href="/apk/CorreCorre.apk" class="contact-button">
+            <img src="/correcorre.png" alt="CorreCorre" class="card-icon">Descarga
+        </a>	
+    </section>
+    </div>
+    <div class="card">
+        <div class="card-info">
+            <h1>Flappy Bird</h1>
+        </div>
+        <img src="/flappy1.png" alt="FlappyBird" class="card-image">
+        <img src="/flappy2.png" alt="FlappyBird" class="card-image">
+        <div class="card-info">
+            <p>Es un juego de destreza donde controlas a un pequeño pájaro 
+                que debe volar a través de un espacio lleno de pilares. El objetivo 
+                es evitar chocar con los pilares y seguir volando lo más lejos 
+                posible, mientras ganas puntos por cada par de tuberías que logras 
+                atravesar. El pájaro se mueve hacia abajo debido a la gravedad, y tú 
+                controlas su ascenso al hacer clic en la pantalla, lo que lo hace 
+                aletear y ganar altura.</p>
+        </div>
+    <section class="contact">
+        <a href="https://github.com/Marisela2005/flappy-bird" class="contact-button">
+            <img src="/github.png" alt="FlappyBird" class="card-icon">Github
+        </a>
+        <a href="https://www.youtube.com/watch?v=3sg_E5r16u4&list=PLREdURb87ks3XCie-QBcE3izSTwHuEbJm" class="contact-button">
+            <img src="/guia.png" alt="FlappyBird" class="card-icon">Guía
+        </a>
+        <a href="/apk/FlappyBird.apk" class="contact-button">
+            <img src="/Bird.png" alt="FlappyBird" class="card-icon">Descarga
+        </a>	
+    </section>
+    </div>
+</section>
+<h1>Sistema de ventas</h1>
+<section class="ventas">
+    <div class="card">
+        <img src="/ventas1.png" alt="CorreCorre" class="card-image">
+        <img src="/ventas2.png" alt="CorreCorre" class="card-image">
+        <div class="card-info">
+            <p>Un sistema de ventas diseñado para facilitar la gestión de negocios, 
+                que permite registrarte como administrador o asistente según tus 
+                funciones. Incluye secciones para crear nuevas ventas, gestionar 
+                clientes, proveedores, productos y consultar reportes detallados de 
+                ventas. Además, ofrece opciones de configuración, garantizando un 
+                control completo y eficiente de las operaciones.</p>
+        </div>
+
+    <section class="contact">
+        <a href="https://github.com/Marisela2005/mySQL" class="contact-button">
+            <img src="/github.png" alt="CorreCorre" class="card-icon">Github
+        </a>
+        <a href="https://www.youtube.com/watch?v=IiOYjdzH_TM&list=PLMPZIgg1n4JlSr_81Lhp8lem8Dtfe9qxV" class="contact-button">
+            <img src="/guia.png" alt="CorreCorre" class="card-icon">Guía
+        </a>
+        <a href="/exe/SistemaVenta.exe" class="contact-button">
+            <img src="/ventas.png" alt="CorreCorre" class="card-icon">Descarga
+        </a>	
+    </section>
+    </div>
+    <p> 
+		Si deseas ponerte en contacto conmigo, visita la sección 'Contactos' para hacerlo.
+	</p>
+</section>
+
+
+
+<style>
+    .texto {
+        color: white;
+        text-align: justify;
+        font-size: 2rem;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .card {
+            background-color: #1a0742;
+            border-radius: 10px;
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            margin-bottom: 100px;
+        }
+
+        .card-image {
+            width: 600px;
+            height: 300px;
+            margin: 20px;
+        }
+        .card-icon {
+            width: 50px;
+            height: 50px;
+        }
+        .card-info h1{
+            color: #ffffff;
+            font-size: 3rem;
+        }
+        .card-info p {
+            margin-right: 50px;  
+            margin-left: 50px; 
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-align: justify;
+        }
+  .contact {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+  }
+  
+  .contact-button {
+	background-color: #ffffff; /* Color de fondo del botón */
+	color: #000000; /* Color del texto */
+	border: none; /* Sin borde */
+	border-radius: 5px; /* Bordes redondeados */
+	padding: 10px 20px; /* Espaciado interno */
+	font-size: 1rem; /* Tamaño de la fuente */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	transition: background-color 0.3s; /* Efecto de transición */
+    margin: 20px;
+  }
+  
+  .contact-button:hover {
+	background-color: #ff1493; /* Color del botón al pasar el ratón */
+  }
+  </style>
+  
+<style>
+	.texto {
+		text-align: justify;
+	}
+	.texto-inicial {
+		text-align: center;
+	}
+</style>
+</Layout>
